@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS rocket_db;
+
+CREATE DATABASE rocket_db;
