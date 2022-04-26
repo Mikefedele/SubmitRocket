@@ -1,14 +1,14 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-// Create Period model
+// Create fact model
 class Fact extends Model {}
 
-// create fields/columns for Location model
+// create fields/columns for fact model
 Fact.init(
     {
         trans_date: {
-            type: DataTypes.DATE,
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
         period_id: {

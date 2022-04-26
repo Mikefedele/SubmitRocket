@@ -1,0 +1,352 @@
+[
+	{
+		"trans_date" : 1650946764,
+		"period_id" : 1,
+		"product_id" : 2,
+		"user_id" : 2,
+		"units" : 27
+	},
+	{
+		"trans_date" : 1650947765,
+		"period_id" : 1,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 3
+	},
+	{
+		"trans_date" : 1650946772,
+		"period_id" : 1,
+		"product_id" : 1,
+		"user_id" : 5,
+		"units" : 15
+	},
+	{
+		"trans_date" : 1650947773,
+		"period_id" : 1,
+		"product_id" : 4,
+		"user_id" : 4,
+		"units" : 6
+	},
+	{
+		"trans_date" : 1650946774,
+		"period_id" : 1,
+		"product_id" : 1,
+		"user_id" : 5,
+		"units" : 3
+	},
+	{
+		"trans_date" : 1650947777,
+		"period_id" : 1,
+		"product_id" : 3,
+		"user_id" : 4,
+		"units" : 26
+	},
+	{
+		"trans_date" : 1650946780,
+		"period_id" : 1,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 9
+	},
+	{
+		"trans_date" : 1650947783,
+		"period_id" : 1,
+		"product_id" : 3,
+		"user_id" : 2,
+		"units" : 5
+	},
+	{
+		"trans_date" : 1650947763,
+		"period_id" : 2,
+		"product_id" : 4,
+		"user_id" : 2,
+		"units" : 30
+	},
+	{
+		"trans_date" : 1650946770,
+		"period_id" : 2,
+		"product_id" : 4,
+		"user_id" : 2,
+		"units" : 17
+	},
+	{
+		"trans_date" : 1650946773,
+		"period_id" : 2,
+		"product_id" : 1,
+		"user_id" : 4,
+		"units" : 27
+	},
+	{
+		"trans_date" : 1650947774,
+		"period_id" : 2,
+		"product_id" : 2,
+		"user_id" : 2,
+		"units" : 12
+	},
+	{
+		"trans_date" : 1650947776,
+		"period_id" : 2,
+		"product_id" : 1,
+		"user_id" : 3,
+		"units" : 21
+	},
+	{
+		"trans_date" : 1650946778,
+		"period_id" : 2,
+		"product_id" : 5,
+		"user_id" : 5,
+		"units" : 28
+	},
+	{
+		"trans_date" : 1650947762,
+		"period_id" : 3,
+		"product_id" : 4,
+		"user_id" : 4,
+		"units" : 26
+	},
+	{
+		"trans_date" : 1650946763,
+		"period_id" : 3,
+		"product_id" : 2,
+		"user_id" : 5,
+		"units" : 29
+	},
+	{
+		"trans_date" : 1650947778,
+		"period_id" : 3,
+		"product_id" : 1,
+		"user_id" : 1,
+		"units" : 27
+	},
+	{
+		"trans_date" : 1650947781,
+		"period_id" : 3,
+		"product_id" : 5,
+		"user_id" : 4,
+		"units" : 12
+	},
+	{
+		"trans_date" : 1650947785,
+		"period_id" : 3,
+		"product_id" : 5,
+		"user_id" : 1,
+		"units" : 29
+	},
+	{
+		"trans_date" : 1650946767,
+		"period_id" : 4,
+		"product_id" : 3,
+		"user_id" : 4,
+		"units" : 28
+	},
+	{
+		"trans_date" : 1650947769,
+		"period_id" : 4,
+		"product_id" : 3,
+		"user_id" : 4,
+		"units" : 24
+	},
+	{
+		"trans_date" : 1650947775,
+		"period_id" : 4,
+		"product_id" : 1,
+		"user_id" : 3,
+		"units" : 22
+	},
+	{
+		"trans_date" : 1650947779,
+		"period_id" : 4,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 21
+	},
+	{
+		"trans_date" : 1650946784,
+		"period_id" : 4,
+		"product_id" : 3,
+		"user_id" : 3,
+		"units" : 13
+	},
+	{
+		"trans_date" : 1650946769,
+		"period_id" : 5,
+		"product_id" : 4,
+		"user_id" : 3,
+		"units" : 8
+	},
+	{
+		"trans_date" : 1650946771,
+		"period_id" : 5,
+		"product_id" : 2,
+		"user_id" : 2,
+		"units" : 19
+	},
+	{
+		"trans_date" : 1650946776,
+		"period_id" : 5,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 25
+	},
+	{
+		"trans_date" : 1650946786,
+		"period_id" : 5,
+		"product_id" : 4,
+		"user_id" : 1,
+		"units" : 11
+	},
+	{
+		"trans_date" : 1650947764,
+		"period_id" : 6,
+		"product_id" : 3,
+		"user_id" : 3,
+		"units" : 21
+	},
+	{
+		"trans_date" : 1650946766,
+		"period_id" : 6,
+		"product_id" : 3,
+		"user_id" : 4,
+		"units" : 17
+	},
+	{
+		"trans_date" : 1650947766,
+		"period_id" : 6,
+		"product_id" : 5,
+		"user_id" : 1,
+		"units" : 12
+	},
+	{
+		"trans_date" : 1650946783,
+		"period_id" : 6,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 22
+	},
+	{
+		"trans_date" : 1650946785,
+		"period_id" : 6,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 22
+	},
+	{
+		"trans_date" : 1650946781,
+		"period_id" : 7,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 25
+	},
+	{
+		"trans_date" : 1650946782,
+		"period_id" : 7,
+		"product_id" : 3,
+		"user_id" : 2,
+		"units" : 5
+	},
+	{
+		"trans_date" : 1650946779,
+		"period_id" : 8,
+		"product_id" : 5,
+		"user_id" : 3,
+		"units" : 26
+	},
+	{
+		"trans_date" : 1650946762,
+		"period_id" : 9,
+		"product_id" : 1,
+		"user_id" : 4,
+		"units" : 3
+	},
+	{
+		"trans_date" : 1650947767,
+		"period_id" : 9,
+		"product_id" : 3,
+		"user_id" : 3,
+		"units" : 19
+	},
+	{
+		"trans_date" : 1650946768,
+		"period_id" : 9,
+		"product_id" : 3,
+		"user_id" : 4,
+		"units" : 21
+	},
+	{
+		"trans_date" : 1650947770,
+		"period_id" : 10,
+		"product_id" : 1,
+		"user_id" : 4,
+		"units" : 14
+	},
+	{
+		"trans_date" : 1650946775,
+		"period_id" : 10,
+		"product_id" : 3,
+		"user_id" : 3,
+		"units" : 26
+	},
+	{
+		"trans_date" : 1650947780,
+		"period_id" : 10,
+		"product_id" : 1,
+		"user_id" : 3,
+		"units" : 20
+	},
+	{
+		"trans_date" : 1650947768,
+		"period_id" : 11,
+		"product_id" : 2,
+		"user_id" : 5,
+		"units" : 10
+	},
+	{
+		"trans_date" : 1650947782,
+		"period_id" : 11,
+		"product_id" : 2,
+		"user_id" : 2,
+		"units" : 6
+	},
+	{
+		"trans_date" : 1650947784,
+		"period_id" : 11,
+		"product_id" : 4,
+		"user_id" : 1,
+		"units" : 16
+	},
+	{
+		"trans_date" : 1650946765,
+		"period_id" : 12,
+		"product_id" : 2,
+		"user_id" : 2,
+		"units" : 3
+	},
+	{
+		"trans_date" : 1650947771,
+		"period_id" : 12,
+		"product_id" : 3,
+		"user_id" : 5,
+		"units" : 24
+	},
+	{
+		"trans_date" : 1650947772,
+		"period_id" : 12,
+		"product_id" : 4,
+		"user_id" : 1,
+		"units" : 26
+	},
+	{
+		"trans_date" : 1650946777,
+		"period_id" : 12,
+		"product_id" : 4,
+		"user_id" : 1,
+		"units" : 12
+	},
+	{
+		"trans_date" : 1650947777,
+		"period_id" : 12,
+		"product_id" : 2,
+		"user_id" : 4,
+		"units" : 22
+	}
+]
