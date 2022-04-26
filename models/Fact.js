@@ -1,10 +1,13 @@
+// Import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
+
+// Import database connection from config.js
 const sequelize = require('../config/connection');
 
 // Create fact model
 class Fact extends Model {}
 
-// create fields/columns for fact model
+// Create fields/columns for fact model
 Fact.init(
     {
         trans_date: {
@@ -40,10 +43,13 @@ Fact.init(
             allowNull: true
         }
     },
+
     {
         sequelize,
         tableName: 'fact',
         timestamps: false,
+
+        // Set up indexes for optimized query performance
         indexes: [
             {
                 name: 'period_id',

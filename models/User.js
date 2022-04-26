@@ -1,10 +1,17 @@
+// Import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
+
+// Import database connection from config.js
 const sequelize = require('../config/connection');
+
+// Import bcrypt for password hashing
+const bcrypt = require('bcrypt');
+
 
 // Create User model
 class User extends Model {}
 
-// create fields/columns for Location model
+// Create fields/columns for User model
 User.init(
     {
         id: {
@@ -32,9 +39,33 @@ User.init(
         user_type: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [6]
+            }
         }
     },
     {
+        // Hooks to hash the password
+        hooks: {
+            beforeCreate: async (newUserData) => {
+                newUserData.password = await bcrypt.hash(
+                    newUserData.password,
+                    10
+                );
+                return newUserData;
+            },
+            beforeUpdate: async (updatedUserData) => {
+                updatedUserData.password = await bcrypt.hash(
+                    updatedUserData.password,
+                    10
+                );
+                return updatedUserData;
+            }
+        },
         sequelize,
         timestamps: false,
         freezeTableName: false,

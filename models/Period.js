@@ -1,4 +1,7 @@
+// Import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
+
+// Import database connection from config.js
 const sequelize = require('../config/connection');
 
 // Create Period model

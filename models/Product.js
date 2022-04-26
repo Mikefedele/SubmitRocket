@@ -1,10 +1,13 @@
+// Import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
+
+// Import database connection from config.js
 const sequelize = require('../config/connection');
 
 // Create Product model
 class Product extends Model {}
 
-// create fields/columns for Location model
+// Create fields/columns for Product model
 Product.init(
     {
         id: {
@@ -14,6 +17,10 @@ Product.init(
             autoIncrement: true
         },
         name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        unit: {
             type: DataTypes.STRING,
             allowNull: false
         }
