@@ -1,35 +1,30 @@
 [
 	{
-		"id" : 1,
 		"first_name" : "Annie",
 		"last_name" : "Adams",
 		"email" : "aa@abc.com",
 		"user_type" : "user"
 	},
 	{
-		"id" : 2,
 		"first_name" : "Barbara",
 		"last_name" : "Bridgerton",
 		"email" : "bb@abc.com",
 		"user_type" : "user"
 	},
 	{
-		"id" : 3,
 		"first_name" : "Cassie",
 		"last_name" : "Cohen",
 		"email" : "cc@abc.com",
 		"user_type" : "user"
 	},
 	{
-		"id" : 4,
 		"first_name" : "Daniel",
 		"last_name" : "Davis",
 		"email" : "dd@abc.com",
 		"user_type" : "user"
 	},
 	{
-		"id" : 5,
-		"first_name" : "Eelen",
+		"first_name" : "Ellen",
 		"last_name" : "Evans",
 		"email" : "ee@abc.com",
 		"user_type" : "admin"
