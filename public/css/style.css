@@ -60,16 +60,6 @@ nav a:hover {
   background-color: var(--dark);
 }
 
-.gallery {
-  flex: 4;
-  background-color: #fff;
-  padding: 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .btn-no-style {
   background: none;
   border: none;
@@ -79,11 +69,6 @@ nav a:hover {
   font-size: 100%;
   transition: color 0.1s;
   margin-left: 16px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .painting {
@@ -137,17 +122,6 @@ img {
   font-size: 1.4rem;
   text-align: center;
   font-weight: bold;
-}
-
-.gallery-name {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 5px var(--secondary);
-  border: 10px groove var(--light);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
 }
 
 /* LAYOUT */
