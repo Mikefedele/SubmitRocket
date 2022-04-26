@@ -1,10 +1,10 @@
-const sequelize = require("../config/connection");
-const { Period, Product, User, Fact } = require("../models");
+const sequelize = require('../config/connection');
+const { Period, Product, User, Fact } = require('../models');
 
-const periodSeedData = require("./periodSeedData.json");
-const productsSeedData = require("./productsSeedData.json");
-const usersSeedData = require("./usersSeedData.json");
-const factSeedData = require("./factSeedData.json");
+const periodSeedData = require('./periodSeedData.json');
+const productsSeedData = require('./productsSeedData.json');
+const usersSeedData = require('./usersSeedData.json');
+const factSeedData = require('./factSeedData.json');
 
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });

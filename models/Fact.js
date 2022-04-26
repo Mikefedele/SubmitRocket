@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
 // Create fact model
 class Fact extends Model {}
@@ -9,58 +9,58 @@ Fact.init(
     {
         trans_date: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: false
         },
         period_id: {
             type: DataTypes.INTEGER,
             allowNull: true,
             references: {
-                model: "periods",
-                key: "id",
-            },
+                model: 'periods',
+                key: 'id'
+            }
         },
         product_id: {
             type: DataTypes.INTEGER,
             allowNull: true,
             references: {
-                model: "products",
-                key: "id",
-            },
+                model: 'products',
+                key: 'id'
+            }
         },
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: true,
             references: {
-                model: "users",
-                key: "id",
-            },
+                model: 'users',
+                key: 'id'
+            }
         },
         units: {
             type: DataTypes.INTEGER,
-            allowNull: true,
-        },
+            allowNull: true
+        }
     },
     {
         sequelize,
-        tableName: "fact",
+        tableName: 'fact',
         timestamps: false,
         indexes: [
             {
-                name: "period_id",
-                using: "BTREE",
-                fields: [{ name: "period_id" }],
+                name: 'period_id',
+                using: 'BTREE',
+                fields: [{ name: 'period_id' }]
             },
             {
-                name: "product_id",
-                using: "BTREE",
-                fields: [{ name: "product_id" }],
+                name: 'product_id',
+                using: 'BTREE',
+                fields: [{ name: 'product_id' }]
             },
             {
-                name: "user_id",
-                using: "BTREE",
-                fields: [{ name: "user_id" }],
-            },
-        ],
+                name: 'user_id',
+                using: 'BTREE',
+                fields: [{ name: 'user_id' }]
+            }
+        ]
     }
 );
 

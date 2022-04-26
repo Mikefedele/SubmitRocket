@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
 // Create User model
 class User extends Model {}
@@ -11,35 +11,35 @@ User.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
+            autoIncrement: true
         },
         first_name: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         last_name: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
             validate: {
-                isEmail: true,
-            },
+                isEmail: true
+            }
         },
         user_type: {
             type: DataTypes.STRING,
-            allowNull: false,
-        },
+            allowNull: false
+        }
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: false,
         underscored: true,
-        modelName: "user",
+        modelName: 'user'
     }
 );
 

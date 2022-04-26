@@ -1,0 +1,4 @@
+*.md
+
+# Anything in the node modules, ignore
+**/node_modules
