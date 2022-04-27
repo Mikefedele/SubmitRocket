@@ -7,7 +7,6 @@ const sequelize = require('../config/connection');
 // Import bcrypt for password hashing
 const bcrypt = require('bcrypt');
 
-
 // Create User model
 class User extends Model {}
 

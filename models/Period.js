@@ -7,7 +7,7 @@ const sequelize = require('../config/connection');
 // Create Period model
 class Period extends Model {}
 
-// create fields/columns for Location model
+// create fields/columns for Period model
 Period.init(
     {
         id: {
