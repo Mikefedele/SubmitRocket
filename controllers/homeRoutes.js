@@ -5,7 +5,7 @@ const { User, Fact, Product, Period } = require('../models');
 
 
 
-router.get('/dashboard', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const factData = await Fact.findAll({
