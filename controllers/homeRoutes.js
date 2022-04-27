@@ -3,7 +3,7 @@ const { User, Fact, Product, Period } = require('../models');
 //TODO comment out withAuth til ready
 // const withAuth = require('../utils/auth');
 
-router.get('/dashboard', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         // Get all projects and JOIN with user data
         const factData = await Fact.findAll({

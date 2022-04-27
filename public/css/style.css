@@ -36,7 +36,10 @@ header {
   text-align: center;
   background: var(--primary);
   color: var(--light);
-
+  background-image: url(../images/submitrocket-logo.png);
+  background-size: 5% auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 nav {

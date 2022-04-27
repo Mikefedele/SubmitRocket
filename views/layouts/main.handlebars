@@ -7,18 +7,18 @@
   <title>SubmitRocket</title>
   <link href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css" alt="SubmitRocket Logo">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <header>
     <h1>SubmitRocket</h1>
-    <img src="../../public/images/submitrocket-logo.png">
   </header>
   <nav>
     <a href="/">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
+    <button id="dashboard" class="btn-no-style" >Dashboard</button>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
