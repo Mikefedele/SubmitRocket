@@ -1,17 +1,22 @@
 [
 	{
-		"name" : "Adventurefuls"
+		"name" : "Adventurefuls",
+		"unit" : "box"
 	},
 	{
-		"name" : "Caramel Chocolate Chip"
+		"name" : "Caramel Chocolate Chip",
+		"unit": "box"
 	},
 	{
-		"name" : "Caramel deLites Samoas"
+		"name": "Caramel deLites Samoas",
+		"unit": "box"
 	},
 	{
-		"name" : "Do-si-dos | Peanut Butter Sandwich"
+		"name": "Do-si-dos | Peanut Butter Sandwich",
+		"unit": "box"
 	},
 	{
-		"name" : "Thin Mints"
+		"name": "Thin Mints",
+		"unit": "box"
 	}
 ]

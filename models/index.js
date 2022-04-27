@@ -1,8 +1,10 @@
+// Import Models
 const Period = require('./Period');
 const Product = require('./Product');
 const User = require('./User');
 const Fact = require('./Fact');
 
+// Facts have many Periods
 Fact.belongsTo(Period, {
     as: 'period',
     foreignKey: 'period_id'
@@ -12,6 +14,8 @@ Period.hasMany(Fact, {
     foreignKey: 'period_id',
     onDelete: 'CASCADE'
 });
+
+// Facts have many Products
 Fact.belongsTo(Product, {
     as: 'product',
     foreignKey: 'product_id'
@@ -21,6 +25,8 @@ Product.hasMany(Fact, {
     foreignKey: 'product_id',
     onDelete: 'CASCADE'
 });
+
+// Facts have many Users
 Fact.belongsTo(User, {
     as: 'user',
     foreignKey: 'user_id'

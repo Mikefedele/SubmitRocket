@@ -1,4 +1,6 @@
+// Import important parts of sequelize library
 const sequelize = require('../config/connection');
+
 const { Period, Product, User, Fact } = require('../models');
 
 const periodSeedData = require('./periodSeedData.json');
@@ -9,13 +11,13 @@ const factSeedData = require('./factSeedData.json');
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
-    const periods = await Period.bulkCreate(periodSeedData);
+    await Period.bulkCreate(periodSeedData);
 
-    const products = await Product.bulkCreate(productsSeedData);
+    await Product.bulkCreate(productsSeedData);
 
-    const users = await User.bulkCreate(usersSeedData);
+    await User.bulkCreate(usersSeedData);
 
-    const facts = await Fact.bulkCreate(factSeedData);
+    await Fact.bulkCreate(factSeedData);
 
     process.exit(0);
 };
