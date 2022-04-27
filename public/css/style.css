@@ -36,11 +36,7 @@ header {
   color: var(--light);
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-}
+
 
 
 nav {
@@ -60,6 +56,7 @@ nav a:hover {
   background-color: var(--dark);
 }
 
+
 .btn-no-style {
   background: none;
   border: none;
@@ -71,17 +68,9 @@ nav a:hover {
   margin-left: 16px;
 }
 
-.painting {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.painting-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* CARDS */
@@ -94,9 +83,15 @@ nav a:hover {
   color: var(--dark);
 }
 
+.container {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .login-card {
-  margin: 0 0 20px 0;
-  flex: 0 0 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 25% 20px 0;
   max-width: 50%;
   padding: 5px;
   border: 3px solid var(--dark);
@@ -105,7 +100,25 @@ nav a:hover {
   border-width: thick;
   background-color: #3c1518;
   color: var(--light);
+  margin-left: 25%;
 }
+
+.signup-card {
+
+  justify-content: center;
+  align-items: center;
+  margin: 5% 50% 20px 0;
+  max-width: 50%;
+  padding: 5px;
+  border: 3px solid var(--dark);
+  border-radius: var(--border-radius);
+  border-style: double;
+  border-width: thick;
+  background-color: #3c1518;
+  color: var(--light);
+  margin-left: 25%;
+}
+
 
 .card header {
   color: var(--light);
@@ -116,6 +129,7 @@ nav a:hover {
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   align-items: center;
+  
 }
 
 .card-body {
