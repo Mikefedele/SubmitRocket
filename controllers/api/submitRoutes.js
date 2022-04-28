@@ -49,7 +49,7 @@ router.get('/', async (req, res) => {
         const facts = factData.map((fact) => fact.get({ plain: true }));
         console.log(facts);
 
-        //Pass serialized data (periods, products, and fact) and session flag into template
+        //Pass spreaded serialized data (periods, products, and fact) and session flag into template
         res.render('submit', {
             ...periods,
             ...products,
