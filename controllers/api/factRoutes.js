@@ -1,7 +1,35 @@
 const router = require('express').Router();
-const { Fact } = require('../../models');
+const { Fact, Product, Period } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+router.get('/', async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const factData = await Fact.findAll({
+      where: {
+        // user_id: req.session.user_id
+      //*HARDCODED FOR NOW, WHEN READY TO DEPLOY UNCOMMENT ABOVE & DELETE BELOW
+        user_id: 1
+      },
+      include: [
+        {
+          model: Product,
+          as: 'product',
+
+        },
+        {
+          model: Period,
+          as: 'period',
+
+        },
+      ],
+    });
+
+    res.status(200).json(factData);
+  } catch (err) {
+    res.status(500).json(err.toString());
+  }
+});
 
 
 // router.post('/', withAuth, async (req, res) => {
@@ -11,7 +39,6 @@ router.post('/', async (req, res) => {
       ...req.body,
     //   user_id: req.session.user_id,
     });
-
 
 
     res.status(200).json(newFact);

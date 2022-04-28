@@ -5,7 +5,7 @@ const periodRoutes = require('./periodRoutes');
 const factRoutes = require('./factRoutes');
 
 router.use('/users', userRoutes);
-router.use('/products', productRoutes);
+router.use('/product', productRoutes);
 router.use('/period', periodRoutes);
 router.use('/fact', factRoutes);
 
