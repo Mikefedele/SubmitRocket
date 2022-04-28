@@ -1,0 +1,26 @@
+<div class="container" style = "background-color: aliceblue; border: 1px solid black">
+  <table>
+    <thead>
+    <tr>
+      <th>
+        Product Name
+      </th>
+    {{#each periods}}
+    {{> dashboardTable}}
+    {{/each}}
+    </tr>
+    </thead>
+    <tbody>
+    {{#each products}}
+    <tr>
+      <td>
+        {{name}}
+      </td>
+      <td>
+        11
+      </td>
+    </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>

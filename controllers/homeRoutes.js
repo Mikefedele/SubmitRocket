@@ -6,7 +6,7 @@ const { Fact, Product, Period } = require('../models');
 
 
 // router.get('/dashboard', withAuth, async (req, res) => {
-router.get('/dashboard', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const factData = await Fact.findAll({
@@ -36,10 +36,23 @@ router.get('/dashboard', async (req, res) => {
     //   facts,
     //   logged_in: req.session.logged_in
     // });
-    res.status(200).json(factData);
+    res.render('homepage')
+    // res.status(200).json(factData);
   } catch (err) {
     res.status(500).json(err.toString());
   }
+});
+
+
+//* ADDED login to homeRoutes
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/api/dashboard');
+    return;
+  }
+
+  res.render('login');
 });
 
 
