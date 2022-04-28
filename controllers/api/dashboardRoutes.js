@@ -58,7 +58,7 @@ console.log(facts);
     // Pass serialized data and session flag into template
     res.render('dashboard', {
       facts, periods, products,
-      logged_in: req.session.logged_in
+      loggedIn: req.session.loggedIn
     });
     // res.render('dashboard')
     // res.status(200).json(periods);
