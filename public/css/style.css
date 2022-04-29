@@ -32,6 +32,7 @@ a:visited {
 
 header {
   font-family: 'Sarpanch', sans-serif;
+  
   padding: 40px;
   text-align: center;
   background: var(--primary);
@@ -40,6 +41,10 @@ header {
   background-size: 5% auto;
   background-repeat: no-repeat;
   background-position-x: center;
+}
+
+.name {
+  font-size: 50px;
 }
 
 nav {
@@ -83,7 +88,7 @@ nav a:hover {
 .login-card {
   justify-content: space-around;
   align-items: center;
-  margin: 10% 25% 20px 0;
+  margin: 10% 10% 20px 0;
   max-width: 50%;
   padding: 5px;
   border: 3px solid var(--dark);
@@ -92,14 +97,14 @@ nav a:hover {
   border-width: thick;
   background-color: #3c1518;
   color: var(--light);
-  margin-left: 25%;
+  margin-left: 10%;
 }
 
 .signup-card {
 
   justify-content: center;
   align-items: center;
-  margin: 5% 80px 20px 80px;
+  margin: 5% 10% 20px 0;
   max-width: 50%;
   padding: 5px;
   border: 3px solid var(--dark);
