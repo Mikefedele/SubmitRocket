@@ -136,3 +136,22 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+
+
+#submitForm {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#product {
+  margin-top: 7px;
+}
+
+#period {
+margin-top: 6px;
+}
+
+#submitBtn {
+  margin-top: 6px;
+  padding: 0 35px;
+}

@@ -1,3 +1,12 @@
+
+// const { Grid } = require("gridjs");
+
+// )
+
+
+
+
+
 // const { Grid, Row } = require("gridjs");
 // const { post } = require("../../controllers/homeRoutes");
 // const { Product, Period, Fact } = require("../../models");
@@ -10,18 +19,43 @@
 // // GET Request
 // const periodColumns = periodName.map(periods);
 
-// console.log('Hello');
+console.log('Hello');
 
 // fetch('/api/fact').then((response)=> response.json()).then((data)=>{
-//   console.log(data);
+//   console.log('hello');
 // });
 
-// async function fetchAsync () {
-//   let response = await fetch('/api/fact');
-//   let data = await response.json();
-//   return data;
 
-// }
+
+const createTable = async () => {
+  const response = await fetch('/api/fact')
+  const factData = await response.json();
+  const periodResponse = await fetch('/api/period')
+  const periodData = await periodResponse.json();
+const periodDates = periodData.map((date)=>date.name)
+
+console.log(periodDates);
+    const grid = new gridjs.Grid({
+      columns:  periodData ,
+      data: [
+        // factData
+      ]
+    }).render(document.getElementById('wrapper'));
+
+    console.log(grid);
+  }
+
+createTable().catch(
+  (err)=> console.log({err})
+);
+// async function table (facts, periods, products) {
+//   const response = await fetch('/api/dashboard');
+//   const data = await response.json(facts, periods, products);
+//   console.log(data);
+
+// };
+
+
 
 
 
