@@ -1,3 +1,9 @@
+<nav>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    <button id="dashboard" class="btn-no-style">Dashboard</button>
+    {{/if}}
+  </nav>
 <form name="submitForm" id="submitForm" class="flex grid-flow-col">
     <div class="mb-3 xl:w-96">
         <select class="form-select appearance-none
@@ -57,6 +63,9 @@
         Dashboard
     </button>
 </form>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 <script src="/js/submit.js"></script>
 {{!-- <table class="table-auto">
     <thead>

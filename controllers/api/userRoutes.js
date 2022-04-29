@@ -76,6 +76,7 @@ router.post('/logout', (req, res) => {
 
 module.exports = router;
 
+module.exports = router;
 
 // const router = require('express').Router();
 // const { User } = require('../../models');

@@ -36,7 +36,7 @@ router.get('/', async (req, res) => {
     //   facts,
     //   logged_in: req.session.logged_in
     // });
-    res.render('homepage')
+    res.render('homepage', {loggedIn: req.session.loggedIn})
     // res.status(200).json(factData);
   } catch (err) {
     res.status(500).json(err.toString());
@@ -47,19 +47,13 @@ router.get('/', async (req, res) => {
 //* ADDED login to homeRoutes
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/api/submit');
+  if (req.session.loggedIn) {
+    res.redirect('/api/dashboard');
     return;
   }
 
   res.render('login');
 });
-
-
-router.get('/api/dashboard', (req, res) =>{
-
-}
-)
 
 
 module.exports = router;
