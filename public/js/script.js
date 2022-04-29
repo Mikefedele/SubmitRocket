@@ -1,31 +1,4 @@
-
-// const { Grid } = require("gridjs");
-
-// )
-
-
-
-
-
-// const { Grid, Row } = require("gridjs");
-// const { post } = require("../../controllers/homeRoutes");
-// const { Product, Period, Fact } = require("../../models");
-
-// var periodName = Fact.period.name;
-// var unitsSold = Fact.units;
-// var productName = Fact.product.name;
-
-// //todo get data iterate over data 
-// // GET Request
-// const periodColumns = periodName.map(periods);
-
 console.log('Hello');
-
-// fetch('/api/fact').then((response)=> response.json()).then((data)=>{
-//   console.log('hello');
-// });
-
-
 
 const createTable = async () => {
   const response = await fetch('/api/fact')
@@ -36,10 +9,36 @@ const periodDates = periodData.map((date)=>date.name)
 
 console.log(periodDates);
     const grid = new gridjs.Grid({
-      columns:  periodData ,
+      // columns:  periodData ,
+      columns: [
+        'Sort',
+        'Jan 2022',
+        'Feb 2022',
+        'March 2022',
+        'Apr 2022',
+        'May 2022',
+        'June 2022',
+        'Jul 2022',
+        'Aug 2022',
+        'Sep 2022',
+        'Oct 2022',
+        'Nov 2022',
+        'Dec 2022', 
+      ],
       data: [
+        ['Adventurefuls', 15, '', 5, 7, '', '',], 
+        ["Caramel Chocolate Chip", 18, 6, 10, '', '', '', '','', ''],
+        // ["Caramel de Lites", 3, 12, 10, '', '', '', '','', ''],
+        ["Do-si-dos", 15, '', 10, 4, '', '', '','', ''],
+        ["Samoas", 25, '', 10, 8, '', '', '','', ''],
+        ["Tagalongs", 12, 14, 10, '', '', '', '','', ''],
+      ],
+      sort: true,
+      search: {
+enabled: true
+      }
         // factData
-      ]
+    
     }).render(document.getElementById('wrapper'));
 
     console.log(grid);
