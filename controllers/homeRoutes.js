@@ -48,12 +48,18 @@ router.get('/', async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/api/dashboard');
+    res.redirect('/api/submit');
     return;
   }
 
   res.render('login');
 });
+
+
+router.get('/api/dashboard', (req, res) =>{
+
+}
+)
 
 
 module.exports = router;
