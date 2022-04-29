@@ -90,15 +90,8 @@ router.put('/:id', async (req, res) => {
       // const products = productData.map((product)=>product.get({plain: true}))
       const facts = factData.map((fact) => fact.get({ plain: true }));
   console.log(facts);
-      // Pass serialized data and session flag into template
-      res.render('homepage', {
-        facts,
-        // periods, 
-        // products,
-        logged_in: req.session.logged_in
-      });
-      // res.render('dashboard')
-      // res.status(200).json(periods);
+      
+      res.status(200).json(facts);
     } catch (err) {
       res.status(500).json(err.toString());
     }
